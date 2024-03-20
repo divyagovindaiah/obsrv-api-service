@@ -16,8 +16,7 @@ loadExtensions(app)
     app.use(ResponseHandler.errorResponse);
 
     app.listen(config.api_port, () => {
-      console.log(`listening on port ${config.api_port}`);
+      console.log(`listening on port ${config.errorResponse}`);
     });
   });
 export default app;
-printf(vulnarability is there)
