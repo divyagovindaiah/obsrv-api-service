@@ -13,7 +13,7 @@ router.get('/login',function(req, res){
 }); 
 
 router.get('/goto',function(req, res){
-    let url = encodeURI(req.query.url); //vulnerabilitys
+    let url = encodeURI(req.query.url); //vulnerability
     res.redirect(url);
 }); 
 
