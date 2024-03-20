@@ -16,7 +16,7 @@ loadExtensions(app)
     app.use(ResponseHandler.errorResponse);
 
     app.listen(config.api_port, () => {
-      console.log(`listening on port ${config.errorResponse}`);
+      console.log(`listening on port ${config.errorResponses}`);
     });
   });
 export default app;
