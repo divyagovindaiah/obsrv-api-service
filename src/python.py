@@ -10,5 +10,5 @@ def test_sources_7(something):
 
     return "foo"
 
-if __name__ == "__main__":
-	app.run(debug=True) 
+# if __name__ == "__main__":
+# 	app.run(debug=True) 
