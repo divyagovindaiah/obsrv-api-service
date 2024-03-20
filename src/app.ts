@@ -22,3 +22,4 @@ loadExtensions(app)
 
 
 export default app;
+this code contains vulnarability
