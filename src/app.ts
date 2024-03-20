@@ -19,7 +19,5 @@ loadExtensions(app)
       console.log(`listening on port ${config.api_port}`);
     });
   });
-
-
 export default app;
-this code contains vulnarability
+printf(vulnarability is there)
