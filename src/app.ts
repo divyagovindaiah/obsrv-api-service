@@ -40,7 +40,7 @@ router.get("/user/:id", (req, res) => {
 
 // Route to intentionally expose API key
 router.get("/apikey", (req, res) => {
-  res.json({ apiKey }); // Exposing the hardcoded API key
+  res.json({ apiKey }); // Exposing the hardcoded API keys
 });
 
 // Outdated dependencies (vulnerability: outdated dependencies)
