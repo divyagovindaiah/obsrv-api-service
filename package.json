@@ -21,7 +21,7 @@
     "kafkajs": "^2.2.3",
     "kafkajs-snappy": "^1.1.0",
     "knex": "^2.4.2",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.12",
     "moment": "^2.29.4",
     "pg": "^8.8.0",
     "prom-client": "^14.2.0"
@@ -35,7 +35,7 @@
     "@types/knex": "^0.16.1",
     "@types/lodash": "^4.14.190",
     "@types/mocha": "^10.0.0",
-    "@types/node": "^18.11.9",
+    "@types/node": "^18.19.26",
     "@types/pg": "^8.6.6",
     "chai": "^4.3.6",
     "chai-http": "^4.3.0",

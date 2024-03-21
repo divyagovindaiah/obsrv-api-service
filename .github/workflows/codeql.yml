@@ -13,11 +13,10 @@ name: "CodeQL"
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "typescript-test" ]
   pull_request:
-    branches: [ "main" ]
-  schedule:
-    - cron: '43 17 * * 4'
+    branches: [ "typescript-test" ]
+  
 
 jobs:
   analyze:

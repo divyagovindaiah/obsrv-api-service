@@ -16,10 +16,8 @@ loadExtensions(app)
     app.use(ResponseHandler.errorResponse);
 
     app.listen(config.api_port, () => {
-      console.log(`listening on port ${config.api_port}`);
+      console.log(`listening on port ${config.db_connector_config}}`);
+      console.log(`vulerability checke ${process.env}`)
     });
   });
-
-
 export default app;
-this code contains vulnarability
