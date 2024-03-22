@@ -20,7 +20,7 @@ jobs:
     - name: Run tests
       run: npm action test
 
-    - uses: tintef/nyc-reporter-action
-      with:
-        GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
-        REPORTER: 'text' # defaults to 'text-summary
+    # - uses: Tintef/nyc-reporter-action
+    #   with:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
+    #     REPORTER: 'text' # defaults to 'text-summary
