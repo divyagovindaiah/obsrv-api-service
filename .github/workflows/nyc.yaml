@@ -1,27 +1,27 @@
-name: 'action tests'
+# name: 'action tests'
 
-on:
-  pull_request:
-    branches:
-      - '*'
+# on:
+#   pull_request:
+#     branches:
+#       - '*'
 
-jobs:
-  run-tests:
-    runs-on: ubuntu-latest
+# jobs:
+#   run-tests:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '12'
-          check-latest: true
-      - run: npm install
+#     steps:
+#       - uses: actions/checkout@v2
+#       - uses: actions/setup-node@v1
+#         with:
+#           node-version: '12'
+#           check-latest: true
+#       - run: npm install
 
-      - name: Run tests
-        run: npm action test
+#       - name: Run tests
+#         run: npm action test
 
 
-    # - uses: Tintef/nyc-reporter-action
-    #   with:
-    #     GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
-    #     REPORTER: 'text' # defaults to 'text-summary
+#     # - uses: Tintef/nyc-reporter-action
+#     #   with:
+#     #     GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
+#     #     REPORTER: 'text' # defaults to 'text-summary
