@@ -19,8 +19,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./obsrv-api-service
+        working-directory: /Users/divya/obsrv-api-service-fork/obsrv-api-service/api-service
 
       - name: Run the tests
         run: npm test -- --coverage
-        working-directory: ./obsrv-api-service
+        working-directory: /Users/divya/obsrv-api-service-fork/obsrv-api-service/api-service
