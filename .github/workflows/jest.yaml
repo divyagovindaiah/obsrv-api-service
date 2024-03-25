@@ -20,6 +20,9 @@ jobs:
       - name: Show current directory
         run: pwd    
 
+      - name: list
+        run: ls   
+
       # - name: Install dependencies
       #   run: npm install
       #   working-directory: /Users/divya/obsrv-api-service-fork/obsrv-api-service/api-service
