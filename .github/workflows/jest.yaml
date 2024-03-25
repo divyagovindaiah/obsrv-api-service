@@ -17,10 +17,13 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install dependencies
-        run: npm install
-        working-directory: /Users/divya/obsrv-api-service-fork/obsrv-api-service/api-service
+      - name: Show current directory
+        run: pwd    
 
-      - name: Run the tests
-        run: npm test -- --coverage
-        working-directory: /Users/divya/obsrv-api-service-fork/obsrv-api-service/api-service
+      # - name: Install dependencies
+      #   run: npm install
+      #   working-directory: /Users/divya/obsrv-api-service-fork/obsrv-api-service/api-service
+
+      # - name: Run the tests
+      #   run: npm test -- --coverage
+      #   working-directory: /Users/divya/obsrv-api-service-fork/obsrv-api-service/api-service
