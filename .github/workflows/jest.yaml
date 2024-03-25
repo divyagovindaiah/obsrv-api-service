@@ -1,0 +1,32 @@
+name: Code Coverage
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.x, 14.x]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Show current directory
+        run: pwd    
+
+      - name: list
+        run: ls   
+
+      # - name: Install dependencies
+      #   run: npm install
+      #   working-directory: /Users/divya/obsrv-api-service-fork/obsrv-api-service/api-service
+
+      # - name: Run the tests
+      #   run: npm test -- --coverage
+      #   working-directory: /Users/divya/obsrv-api-service-fork/obsrv-api-service/api-service
