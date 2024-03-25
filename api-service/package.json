@@ -5,7 +5,7 @@
   "main": "dist/app.js",
   "scripts": {
     "start": "ts-node ./src/app.ts",
-    "test": "source .env.test && nyc mocha ./src/test/*.spec.ts --exit",
+    "test": "source .env.test && nyc mocha ./src/test/*.spec.ts --exit && jest",
     "actions:test": "nyc mocha ./src/test/*.spec.ts --exit",
     "build": "tsc -P ."
   },
@@ -67,6 +67,7 @@
     "chai-http": "^4.3.0",
     "chai-spies": "^1.0.0",
     "diff-json": "^2.0.0",
+    "jest": "^29.7.0",
     "mocha": "^10.1.0",
     "nock": "^13.2.9",
     "nodemon": "^3.0.1",
